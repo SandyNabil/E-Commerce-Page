@@ -1,6 +1,8 @@
 # E-Commerce Page
 Project Overview
-This project is a fully responsive e-commerce section built based on the provided Figma design. It dynamically renders product data and manages cart interactions using vanilla JavaScript without external frameworks.
+This project is a fully responsive e-commerce section built based on the provided Figma design : 
+https://www.figma.com/design/4ad9MKcLpwOHwvco8bnHea/Technical-Tasks?node-id=0-1&t=7LwPsWITMEswsyio-1  .
+It dynamically renders product data and manages cart interactions using vanilla JavaScript without external frameworks.
 
 Architecture
 The application follows a modular, class-based structure to separate concerns between data management and UI rendering.
