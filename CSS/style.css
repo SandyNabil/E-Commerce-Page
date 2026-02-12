@@ -1,0 +1,31 @@
+/* colors */
+:root{
+    --background-color: #000000;
+    --main-text-color: #FFFFFF;
+    --secondary-text-color: #AEE4FF;
+    --buttons-bg: #ADE3FE;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* body */
+body{
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--main-text-color);
+    padding:2em;
+    font-family: 'Avenir', sans-serif;
+
+}
+
+.cart{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    gap: 4px;
+}
+.cart span{
+    font-size: 40px;
+}
