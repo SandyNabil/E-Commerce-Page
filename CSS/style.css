@@ -278,7 +278,6 @@ border-color: var(--main-text-color) !important;
 .ring-collection {
     padding-top: 8px;
     width: 100%;
-
 }
 
 .ring-collection h2 {
@@ -289,6 +288,7 @@ border-color: var(--main-text-color) !important;
     color: var(--main-text-color);
     opacity: 70%;
     display: none;
+    margin-bottom: 3rem;
 }
 
 .products {
@@ -299,11 +299,15 @@ border-color: var(--main-text-color) !important;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+        margin: 16px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        position: relative;
 }
 
 .card img {
@@ -332,7 +336,39 @@ border-color: var(--main-text-color) !important;
     opacity: 50%;
     font-weight: 500;
 }
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(174, 228, 255, 0.3);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+}
 
+.card:hover img {
+    transform: scale(1.05);
+}
+.card.active {
+    border: 2px solid var(--secondary-text-color);
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(174, 228, 255, 0.5);
+    background-color: rgba(174, 228, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.card.active img {
+    transform: scale(1.1);
+}
+
+.card.active h3 {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+}
+
+.card img {
+    transition: all 0.3s ease;
+}
 /* ============ SHOP BUTTON ============ */
 .ring-collection{
   display: flex;
