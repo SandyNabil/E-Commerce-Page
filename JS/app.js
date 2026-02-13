@@ -27,17 +27,8 @@ class App {
     // 1. Render all 4 products in Ring Collection
     this.productList.renderProducts();
 
-    // 2. Select first product as default
-    if (products.length > 0) {
-      this.productList.selectProduct(products[0]);
-      window.currentProduct = products[0];
-      
-      // Mark first card as active
-      const firstCard = document.querySelector('.card');
-      if (firstCard) {
-        firstCard.classList.add('active');
-      }
-    }
+    // 2. Display default state (no product selected)
+    // Show default image and information from HTML
 
     // 3. Bind all event listeners
     this.bindEvents();
